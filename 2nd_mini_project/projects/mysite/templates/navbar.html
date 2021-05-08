@@ -1,0 +1,36 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'nav.css' %}">
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="{% url 'pybo:index' %}">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="{% url 'pybo:cluster' %}">make_cluster_buy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'pybo:stock' %}">US_stock_apple</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'pybo:amazon' %}">US_stock_amazon</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'pybo:coupang' %}">US_stock_coupang</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'pybo:datadog' %}">US_stock_datadog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'pybo:palantir' %}">US_stock_palantir</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'pybo:tesla' %}">US_stock_tesla</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'pybo:unity' %}">US_stock_unity</a>
+            </li>
+        </ul>
+    </div>
+</nav>

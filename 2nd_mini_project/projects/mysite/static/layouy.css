@@ -1,0 +1,27 @@
+<style>
+    .header {
+        background-color: blue;
+        color: #fff;
+    }
+    .left {
+        background-color: white;
+        color: #fff;
+        float: left;
+        width: 200px;
+        height: 300px;
+    }
+    .content {
+        background-color: white;
+        color: #fff;
+        height: 500px;
+        margin-left: 200px;
+    }
+    .footer {
+        background-color: green;
+        color: #fff;
+    }
+    .span4{
+        width:33.33%;
+        float:left;
+    }
+</style>

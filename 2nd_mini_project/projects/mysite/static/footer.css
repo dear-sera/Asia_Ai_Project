@@ -1,0 +1,20 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+.contents-wrap {
+   min-height:100%;
+   position:relative;
+   padding-bottom:100px;/* footer height */
+}
+.footer {
+   width:100%;
+   height:100px;
+   position:absolute;
+   bottom:0;
+   background:#5eaeff;
+  text-align: center;
+  color: white;
+}

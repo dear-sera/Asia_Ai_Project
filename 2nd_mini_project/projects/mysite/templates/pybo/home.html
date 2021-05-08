@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    {% load static %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>stock in here!</title>
+    <link rel="stylesheet" href="{% static 'blog.css' %}">
+    <link rel="stylesheet" href="{% static 'layouy.css' %}">
+    <!-- 폰트 -->
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="page-header">
+    <h1><a href="/">US stock insider trading</a></h1>
+</div>
+{% include "navbar.html" %}
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span9">
+            <div class="hero-unit">
+                <div class="float-left">
+                    <img src="/static/image/루피5.jpg" alt="주식" class="img-rounded">
+                </div>
+                <div class="float-left">
+                    <img src="/static/image/루피4.jpg" alt="주식" class="img-rounded">
+                </div>
+                <div class="float-left">
+                    <img src="/static/image/루피9.png" alt="주식" class="img-rounded">
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row-fluid">
+                <div class="wrapper" style="">
+                    <div class="span4">
+                        <h2>Opensider</h2>
+                        <p>
+                            Latest Cluster Buys, Latest Insider Buys, Latest Penny Stock Buys
+                            각각의 항목이 나와있는 내부자거래 사이트입니다.
+                        </p>
+                        <p>
+                            <a class="btn btn-success" href="http://openinsider.com/" target="_blank">
+                                <button type="'button" class="btn btn-success btn-lg">openinsider 사이트</button>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="span4">
+                        <h2>Secform4</h2>
+                        <p>
+                            특정 Ticker를 입력하면 Ticker회사에 대한 내부자거래와
+                            Stock options 내부자거래가 상세하게 나오는 페이지입니다.
+                        </p>
+                        <p>
+                            <a class="btn btn-warning" href="https://www.secform4.com/" target="_blank">
+                                <button type="'button" class="btn btn-warning btn-lg">secform4 사이트</button>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="span4">
+                        <h2>Kospi</h2>
+                        <p>
+                            네이버 금융 국내증시 검색 상위 종목 top10 결과 ->
+                            순위 종목명 검색비율 현재가 전일비 등락률 을 나타냅니다.
+                        </p>
+                        <p>
+                            <a class="btn btn-info" href="{% url 'pybo:kospi' %}">
+                                <button type="'button" class="btn btn-info btn-lg">kospi top10 알림받기</button>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="span4">
+                        <h2>Apple</h2>
+                        <p>
+                            Apple 내부자 거래 최신 3개 항목을 출력해줍니다.
+                        </p>
+                        <p>
+                            <a class="btn btn-success" href="{% url 'pybo:apple' %}">
+                                <button type="'button" class="btn btn-success btn-lg">apple 알림받기</button>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="span4">
+                        <h2>Amazon</h2>
+                        <p>
+                            Amazon 내부자 거래 최신 3개 항목을 출력해줍니다.
+                        </p>
+                        <p>
+                            <a class="btn btn-warning" href="{% url 'pybo:ama' %}">
+                                <button type="'button" class="btn btn-warning btn-lg">amazon 알림받기</button>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="span4">
+                        <h2>Coupang</h2>
+                        <p>
+                            Coupang 내부자 거래 최신 3개 항목을 출력해줍니다.
+                        </p>
+                        <p>
+                            <a class="btn btn-info" href="{% url 'pybo:cou' %}">
+                                <button type="'button" class="btn btn-info btn-lg">coupang 알림받기</button>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="span4">
+                        <h2>Datadog</h2>
+                        <p>
+                            Datadog 내부자 거래 최신 3개 항목을 출력해줍니다.
+                        </p>
+                        <p>
+                            <a class="btn btn-success" href="{% url 'pybo:dat' %}">
+                                <button type="'button" class="btn btn-success btn-lg">Datadog 알림받기</button>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="span4">
+                        <h2>Tesla</h2>
+                        <p>
+                            Tesla 내부자 거래 최신 3개 항목을 출력해줍니다.
+                        </p>
+                        <p>
+                            <a class="btn btn-warning" href="{% url 'pybo:tes' %}">
+                                <button type="'button" class="btn btn-warning btn-lg">tesla 알림받기</button>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="span4">
+                        <h2>Palantir</h2>
+                        <p>
+                            Palantir 내부자 거래 최신 3개 항목을 출력해줍니다.
+                        </p>
+                        <p>
+                            <a class="btn btn-info" href="{% url 'pybo:pal' %}">
+                                <button type="'button" class="btn btn-info btn-lg">palantir 알림받기</button>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+{% include "footer.html" %}
+</html>
